@@ -1,0 +1,246 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full Page Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #656d75;
+    padding: 15px 30px;
+    margin-top: 1px;
+}
+
+.logo {
+    font-size: 20px; /* Adjust logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+    max-width: 60%;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Container */
+.container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 80px auto; /* Add margin to account for fixed navbar */
+    min-height: calc(100vh - 100px); /* Ensure container has enough height */
+    overflow-y: auto; /* Allow scrolling if content is too long */
+}
+
+/* Image Container */
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.image-container img {
+    width: 80%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Content Section */
+.content h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Search Container */
+.search-container {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#location-search {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#location-search:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion-item:active {
+    background-color: #e0e0e0;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Response Message */
+#response-message {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 1.1em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+    display: block; /* Ensure the message is block-level */
+    width: 100%; /* Full width */
+    text-align: center;
+}
+
+#response-message.success {
+    opacity: 1;
+    transform: translateY(0);
+    background: linear-gradient(145deg, #e8f5e9, #c8e6c9);
+    border: 1px solid #81c784;
+    color: #2e7d32;
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.1);
+}
+
+.confirmation-icon {
+    font-size: 3em; /* Make icon bigger */
+    margin-bottom: 15px;
+    color: #2e7d32;
+    animation: bounceIn 0.5s ease-out;
+}
+
+.confirmation-text {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+.delivery-time {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-top: 15px;
+    font-size: 1.2em;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,167 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #ccc;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #007bff;
+}
+/* Navigation bar styling */
+.navbar {
+    width: calc(100% - 250px);
+    height: 60px;
+    background-color: #3b3d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    padding: 0 30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+.nav-right {
+     margin-right: 50px;
+}
+
+
+
+/* Main content */
+.main-content {
+    margin-left: 250px;
+    margin-top: 60px; /* Offset for navbar height */
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Offset for navbar height */
+    background-color: #f4f4f9;
+}
+
+/* Container box */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Title */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Stock count text */
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Stock controls container */
+.stock-controls {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input field */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Increase button */
+button:nth-child(2) {
+    background: #28a745;
+    color: white;
+}
+
+/* Decrease button */
+button:nth-child(3) {
+    background: #dc3545;
+    color: white;
+}
+
+/* Button hover effects */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Response message */
+#response-message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}

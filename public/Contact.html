@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Chick Booker</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">🐥 Chick Booker</div>
+        <ul class="nav-links">
+        
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking-page.html">BookNow</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have a question? Get in touch with us!</p>
+
+        <div class="contact-content">
+            <!-- Contact Form -->
+            <form id="contactForm" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>📍 Address</h3>
+                <p> Mombasa Town, Mombasa</p>
+
+                <h3>📞 Phone</h3>
+                <p>(+254) 112-675-415</p>
+
+                <h3>📧 Email</h3>
+                <p>support@chickbooker.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+
+        <div class="faq-item">
+            <h3>📅 How do I book one-day-old chicks?</h3>
+            <p>You can book chicks via our <a href="booking.html">Booking Page</a>. Choose your preferred bird type, quantity, and delivery date.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>💰 What payment methods do you accept?</h3>
+            <p>We accept M-Pesa and bank transfers. Payment is required before confirmation.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🚚 When will my chicks be delivered?</h3>
+            <p>Delivery is done on the selected date. We recommend booking at least 7 days in advance.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🐥 What is the maximum number of chicks I can purchase?</h3>
+            <p>There is no strict limit, but bulk orders (500+ chicks) require advance confirmation for availability. Please contact us for large-scale purchases.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>🔄 Do you offer refunds or cancellations after booking?</h3>
+            <p>Once a booking is confirmed, cancellations are not allowed. However, you may reschedule your delivery date within 24 hours of booking.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Chick Booker | Designed for seamless bookings</p>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>

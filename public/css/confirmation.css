@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #007bff;
+    color: white;
+}
+.navbar .logo {
+    font-size: 20px;
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav .nav-links li a:hover {
+    color: #727577;
+}
+
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+/* Booking Details Section */
+#booking-details {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+#booking-details p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+#booking-details strong {
+    color: #007bff;
+}
+
+/* Proceed to Payment Button */
+#proceed-payment {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#proceed-payment:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #booking-details {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+/* Add to existing CSS */
+.booking-info, .payment-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-info h3, .payment-info h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.payment-info {
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    border: 1px solid #dee2e6;
+}
+
+.payment-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #495057;
+}
+
+.total-amount {
+    margin-top: 15px !important;
+    padding-top: 15px;
+    border-top: 2px dashed #dee2e6;
+    font-size: 1.3em !important;
+    color: #28a745 !important;
+}
+
+#proceed-payment {
+    background: #2196F3;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(33, 150, 243, 0.2);
+    width: auto;
+    display: inline-block;
+}
+
+#proceed-payment:hover {
+    background: #1976D2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(33, 150, 243, 0.3);
+}
+
+#proceed-payment:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChickBooker | Online Booking Platform for one-day-old chicks</title>
+    <link rel="stylesheet" href="css/bookingpage.css">
+</head>
+<body>
+    <header class="hero-section" id="hero">
+        <nav class="navbar">
+            <div class="logo">🐥 Chick Booker</div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking-page.html">BookNow</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section class="content">
+                <div class="booking-container">
+                    <h2>Book Your One-Day-Old Chicks From Supreme Poultry</h2>
+                    <form id="booking-form">
+                        <input type="text" id="fullName" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="number" id="numberOfChicks" placeholder="Number of Chicks" min="100" step="50" max="500" required>
+                        <select id="birdType" required>
+                            <option value="">Select Bird Type</option>
+                            <option value="Layers">Layers</option>
+                            <option value="Broilers">Broilers</option>
+                        </select>
+                        <input type="date" id="bookingDate" required>
+                        <input type="date" id="deliveryDate" required>
+                        <p id="dateError" style="color: red; display: none;">Please choose a valid date.</p>
+                        <button type="submit">Confirm Booking</button>
+                    </form>
+            </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>📍 Mombasa Town, Mombasa</p>
+                    <p>📞 (254) 112675415</p>
+                    <p>📧 support@chickbooker.com</p>
+                </div>
+        
+                <div class="footer-cta">
+                    <h3>Need Assistance?</h3>
+                    <p>Have questions or need help with your booking?</p>
+                    <a href="contact.html" class="cta-button">Get in Touch</a>
+                </div>
+        
+                <div class="footer-copyright">
+                    <p>© 2025 Chick Booker. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="js/booking.js"></script>
+</body>

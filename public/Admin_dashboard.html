@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/Admin_dashboard.css">
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="nav-links">
+            <ul>
+           
+           <li> <a href="index.html">🚪 Logout</a> </li>
+            </ul>
+        </div>
+        <h1 class="dashboard-title">Admin Dashboard</h1>
+    </nav>
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="Admin_dashboard.html">📊 Total Bookings</a></li>
+            <li><a href="manage_bookings.html">📅 Manage Bookings</a></li>
+            <li><a href="manage_users.html">👥 Manage Customers</a></li>
+            <li><a href="manage_inventory.html">💳 Manage inventory</a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>📊 Dashboard Overview</h1>
+        <div class="dashboard-stats">
+            <div class="stat-box">
+                <h3>Total Bookings</h3>
+                <p id="totalBookings">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Pending Orders</h3>
+                <p id="pendingOrders">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Completed Orders</h3>
+                <p id="completedOrders">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Payment Status</h3>
+                <p>Pending: <span id="pendingPayments">0</span></p>
+                <p>Paid: <span id="paidOrders">0</span></p>
+                <p>Failed: <span id="failedPayments">0</span></p>
+            </div>
+       
+    
+    </div>
+    <script src="js/admin_dashboard.js"></script>
+
+</body>
+</html>

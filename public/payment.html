@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - ChickBooker</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="logo">🐥 Chick Booker</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking-page.html">Booking</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <div class="payment-container">
+        <h2>Confirm Your Payment</h2>
+        <div id="bookingDetails">
+            <p><strong>Booking Details:</strong></p>
+        </div>
+
+        <label for="phoneNumber">Enter Phone Number:</label>
+        <input type="text" id="phoneNumber" placeholder="e.g. 07XXXXXXXX" required>
+
+        <button id="payButton">Pay</button>
+        <p id="paymentMessage"></p>
+    </div>
+
+    <script src="js/payment.js"></script>
+</body>
+</html>

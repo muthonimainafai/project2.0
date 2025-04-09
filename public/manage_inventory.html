@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Inventory</title>
+    <link rel="stylesheet" href="css/inventory.css">
+</head>
+<body>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="Admin_dashboard.html">Total Bookings</a></li>
+            <li><a href="manage_bookings.html">Manage Bookings</a></li>
+            <li><a href="manage_users.html">Manage Users</a></li>
+            <li><a href="manage_inventory.html" class="active">Manage Inventory</a></li>
+          
+        </ul>
+    </div>
+
+ <!-- Navigation Bar -->
+ <div class="navbar">
+    <a href="Admin_dashboard.html" class="nav-left">Dashboard</a>
+    <a href="index.html" class="nav-right">Logout</a>
+</div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <h2>Manage Inventory</h2>
+            <p>Current Stock: <span id="stock-count">Loading...</span> chicks</p>
+            <div class="stock-controls">
+                <input type="number" id="stock-change" placeholder="Enter stock change">
+                <button onclick="updateStock(1)">Increase</button>
+                <button onclick="updateStock(-1)">Decrease</button>
+            </div>
+            <p id="response-message"></p>
+        </div>
+    </div>
+
+    <script src="js/inventory.js"></script>
+</body>
+</html>

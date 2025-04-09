@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manage Bookings</title>
+    <link rel="stylesheet" href="css/manage_bookings.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            
+            <a href="Admin_dashboard.html">Dashboard</a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <a href="Admin_dashboard.html">Total Bookings</a>
+        <a href="manage_bookings.html" class="active">Manage Bookings</a>
+        <a href="manage_users.html">Manage Customers</a>
+        <a href="manage_inventory.html">Manage Payments</a>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Manage Bookings</h1>
+        <div class="download-container">
+            <button id="downloadPdfBtn">Download Report as PDF</button>
+        </div>
+
+        <div class="summary">
+            <div class="summary-box">Total Bookings: <span id="totalBookings">0</span></div>
+            <div class="summary-box">Pending Orders: <span id="pendingOrders">0</span></div>
+            <div class="summary-box">Completed Orders: <span id="completedOrders">0</span></div>
+            <div class="summary-box">Payment Status: <span id="paymentStatus">Pending</span></div>
+        </div>
+       
+        <!-- Bookings Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Booking ID</th>
+                    <th>fullName</th>
+                    <th>Email</th>
+                    <th>numberOfChicks</th>
+                    <th>Bird Type</th>
+                    <th>Booking Date</th>
+                    <th>Delivery Date</th>
+                    <th>Status</th>
+                    <th>Payment Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="bookingTableBody">
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+<script src="js/manage_bookings.js"></script>
+</body>
+</html>

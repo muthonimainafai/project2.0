@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Delivery Location</title>
+    <link rel="stylesheet" href="css/delivery.css">
+</head>
+<body>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="logo">🐥 Chick Booker</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking-page.html">Booking</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <!-- Image Placeholder -->
+        <div class="image-container">
+            <img src="images/delivery1.jpg" alt="Delivery image" id="location-image">
+        </div>
+
+        <div class="content">
+            <h2>Choose Your Delivery Location</h2>
+            <p>Search and confirm your preferred delivery location.</p>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="location-search" placeholder="Enter your location..." onkeyup="searchLocation()">
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+
+            <!-- Confirmation Button -->
+            <div class="delivery-form">
+                <button id="confirm-btn">Confirm Location</button>
+            </div>
+
+            <p id="response-message"></p>
+        </div>
+    </div>
+
+    <script src="js/delivery.js"></script>
+</body>
+</html>
